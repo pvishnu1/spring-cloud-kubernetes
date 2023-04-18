@@ -74,11 +74,10 @@ pipeline {
 	    stage ("wait_for_pods"){
 	    steps{
               
-                sh 'sleep 300'
+                sh 'sleep 400'
              
 	    }
 	    }
-	    
 		stage("rollback deployment") {
 	        steps {	            	         	           
 	              sh """
